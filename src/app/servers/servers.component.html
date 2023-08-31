@@ -1,0 +1,18 @@
+<div>
+  <label class="font-medium">Server Name:</label>
+  <input type="text" class="bg-indigo-50 rounded-md ml-2 border border-indigo-100 py-1 px-2">
+</div>
+<div class="flex justify-center mt-3">
+  <button
+    [disabled]="!allowNewServer"
+    (click)="onCreateServer()"
+    class="bg-indigo-300 text-white font-medium py-2 px-3 rounded-md hover:bg-indigo-400 shadow"
+  >
+    Add Server
+  </button>
+</div>
+<!-- <p [innerText]="allowNewServer"></p> -->
+<p class="text-center mt-2">{{ serverCreationStatus }}</p>
+
+<app-server></app-server>
+<app-server></app-server>
